@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Выездной ролевой квест</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="container">
+
+      <nav class="header-menu">
+        <ul>
+          <li><a href="#" data-href="business-block">Бизнес-модель</a></li>
+          <li><a href="#" data-href="contact-us-block">О квесте</a></li>
+          <li><a href="#" data-href="gallery">Фотогалерея</a></li>
+          <li><a href="#" data-href="contact-us-form">Обратная связь</a></li>
+        </ul>
+
+        <span class="burger-menu js-menu"></span>
+      </nav>
+
+      <div class="title">
+        <h1>Выездной ролевой квест</h1>
+        <p class="sub-title">Организуйте умные коммуникативные игры на 6-15 и более человек</p>
+      </div>
+    </div>
+  </header>
+  <!-- .Header -->
+
+  <!-- Contact-us-block -->
+  <section class="contact-us-block">
+    <div class="container">
+      
+      <ul class="clearfix">
+        <li>
+          <img src="img/contact-1.png" alt="">
+          <p>Игра на общение</p>
+        </li>
+        <li>
+          <img src="img/contact-2.png" alt="">
+          <p>Смена привычных ролей</p>
+        </li>
+        <li>
+          <img src="img/contact-3.png" alt="">
+          <p>Интеллектуальное развлечение</p>
+        </li>
+        <li>
+          <img src="img/contact-4.png" alt="">
+          <p>Интеллектуальное развлечение</p>
+        </li>
+      </ul>
+
+      <div class="btn-wrapper">
+        <a href="#" class="btn btn-red" data-href="contact-us-form">Связаться с нами</a>
+      </div>
+
+    </div>
+  </section>
+  <!-- .Contact-us-block -->
+
+  <!-- divider -->
+  <div class="divider"></div>
+
+  <!-- Business-block -->
+  <section class="business-block">
+    <div class="container">
+      
+      <div class="header">
+        <h2>Бизнес-модель</h2>
+      </div>
+
+      <ul class="clearfix">
+        <li>
+          <img src="img/business-1.png" alt="">
+          <p>В игре участвует 6-15+ человек</p>
+        </li>
+        <li>
+          <img src="img/business-2.png" alt="">
+          <p>Игра длится 2 часа</p>
+        </li>
+        <li>
+          <img src="img/business-3.png" alt="">
+          <p>Квест проводится, где вам угодно</p>
+        </li>
+        <li>
+          <img src="img/business-4.png" alt="">
+          <p>Проведение игры  уже в день покупки</p>
+        </li>
+      </ul>
+
+      <div class="btn-wrapper">
+        <a href="#" class="btn btn-red js-calc-show" data-href="calc-block">Посчитать прибыль</a>
+      </div>
+
+    </div>
+  </section>
+  <!-- .Business-block -->
+
+  <!-- Calc-block -->
+  <div class="calc-block">
+    <div class="container">
+      
+      <div class="header">
+        <h2>Узнайте точную сумму годового дохода</h2>
+      </div>
+
+      <div class="calc-wrapper">
+        <form class="calc-form">
+          
+          <div class="field clearfix">
+            <label>Лицензия+оборудование:</label>
+            <span>рублей</span>
+            <input type="text" id="lpo" value="500000">
+          </div>
+          <div class="field clearfix">
+            <label>Зарплата ведущего:</label>
+            <span>рублей</span>
+            <input type="text" id="mod_salary" value="40000">
+          </div>
+          <div class="field clearfix">
+            <label>Зарплата фотографа:</label>
+            <span>рублей</span>
+            <input type="text" id="photo_salary" value="60000">
+          </div>
+          <div class="field clearfix">
+            <label>Количество корпоративов в месяц:</label>
+            <input type="text" id="corp_count" value="35">
+          </div>
+          <div class="field clearfix">
+            <label>Стоимость корпоратива:</label>
+            <span>рублей</span>
+            <input type="text" id="corp_price" value="30000">
+          </div>
+          <div class="field clearfix">
+            <label>Затраты на маркетинг:</label>
+            <span>рублей</span>
+            <input type="text" id="mark_price" value="100000">
+          </div>
+          <div class="field clearfix">
+            <label>Другие затраты:</label>
+            <span>рублей</span>
+            <input type="text" id="other_price" value="50000">
+          </div>
+
+          <a href="#" class="btn btn-red" data-href="contact-us-form">Связаться с нами</a>
+
+          <div class="profit clearfix">
+            <input type="text" id="result" readonly> <span>рублей</span>
+          </div>
+        </form>
+      </div>
+
+    </div>
+  </div>
+  <!-- .Calc-block -->
+
+  <!-- Gallery -->
+  <section class="gallery">
+    <div class="js-gallery">
+      <div class="galley-item"><img src="img/gallery-1.jpg" alt=""></div>
+      <div class="galley-item"><img src="img/gallery-2.jpg" alt=""></div>
+      <div class="galley-item"><img src="img/gallery-3.jpg" alt=""></div>
+    </div>
+    <div class="arrow-wrapper"></div>
+  </section>
+  <!-- .Gallery -->
+
+  <!-- Review -->
+  <section class="review-block">
+    <div class="container">
+      
+      <div class="header">
+        <h2>Отзывы</h2>
+      </div>
+
+      <div class="tabs">
+        <ul>
+          <li><a href="#" class="js-tab active" data-tab="customer">Клиенты</a></li>
+          <li><a href="#" class="js-tab" data-tab="business">Бизнесмены</a></li>
+        </ul>
+
+        <div class="tab-content">
+
+          <div id="customer" class="js-review-gallery review-gallery active">
+            <div class="item">
+              <img src="img/customer-1.png" alt="">
+              <p class="name">Helen, Designer</p>
+              <p class="location">Saint-Petersburg, Russia</p>
+              <p class="review">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad provident porro perspiciatis iure illum excepturi dolor suscipit vel quaerat eveniet debitis non placeat maiores voluptas, ipsum possimus minima tempora neque quibusdam! Architecto non porro, placeat, illo magni eveniet minima dolorum doloremque vitae, ipsa voluptas ratione et, minus laudantium itaque harum!</p>
+            </div>
+            <div class="item">
+              <img src="img/customer-2.png" alt="">
+              <p class="name">Peter, Engineer</p>
+              <p class="location">Moscow, Russia</p>
+              <p class="review">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus beatae quisquam, aut iure laboriosam at facilis quo voluptate minima. Aspernatur eum delectus in et ducimus numquam itaque ab, est ex.</p>
+            </div>
+            <div class="item">
+              <img src="img/customer-3.png" alt="">
+              <p class="name">David, Programmer</p>
+              <p class="location">London, UK</p>
+              <p class="review">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum quis fugit reprehenderit blanditiis temporibus. Neque hic ut pariatur quas expedita voluptate facilis explicabo, fuga dolor veniam vitae sequi dignissimos, facere magnam ipsum, accusamus blanditiis consequuntur, molestiae. Iusto illum quisquam fuga reiciendis quos eius cum vel tempore ipsum, rem laboriosam, beatae.</p>
+            </div>
+            <div class="item">
+              <img src="img/customer-4.png" alt="">
+              <p class="name">Mary, PR-Manager</p>
+              <p class="location">Paris, France</p>
+              <p class="review">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor ullam reiciendis quo aperiam nisi laboriosam esse minus maxime dolorum obcaecati ipsum corporis natus voluptatibus quidem, vero quaerat quos inventore velit consectetur asperiores, ducimus quae? Fugit quos laborum in et cumque repellendus ea error architecto sequi, eum, possimus atque, laudantium asperiores. Dolore consequuntur repudiandae quam tempora iure consequatur maiores corporis quaerat officiis aspernatur temporibus, possimus pariatur, magnam mollitia numquam. Aspernatur eaque corrupti, magni natus delectus quas!</p>
+            </div>
+            <div class="item">
+              <img src="img/customer-1.png" alt="">
+              <p class="name">Helen, Designer</p>
+              <p class="location">Saint-Petersburg, Russia</p>
+              <p class="review">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad provident porro perspiciatis iure illum excepturi dolor suscipit vel quaerat eveniet debitis non placeat maiores voluptas, ipsum possimus minima tempora neque quibusdam! Architecto non porro, placeat, illo magni eveniet minima dolorum doloremque vitae, ipsa voluptas ratione et, minus laudantium itaque harum!</p>
+            </div>
+            <div class="item">
+              <img src="img/customer-2.png" alt="">
+              <p class="name">Peter, Engineer</p>
+              <p class="location">Moscow, Russia</p>
+              <p class="review">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus beatae quisquam, aut iure laboriosam at facilis quo voluptate minima. Aspernatur eum delectus in et ducimus numquam itaque ab, est ex.</p>
+            </div>
+            <div class="item">
+              <img src="img/customer-3.png" alt="">
+              <p class="name">David, Programmer</p>
+              <p class="location">London, UK</p>
+              <p class="review">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum quis fugit reprehenderit blanditiis temporibus. Neque hic ut pariatur quas expedita voluptate facilis explicabo, fuga dolor veniam vitae sequi dignissimos, facere magnam ipsum, accusamus blanditiis consequuntur, molestiae. Iusto illum quisquam fuga reiciendis quos eius cum vel tempore ipsum, rem laboriosam, beatae.</p>
+            </div>
+            <div class="item">
+              <img src="img/customer-4.png" alt="">
+              <p class="name">Mary, PR-Manager</p>
+              <p class="location">Paris, France</p>
+              <p class="review">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor ullam reiciendis quo aperiam nisi laboriosam esse minus maxime dolorum obcaecati ipsum corporis natus voluptatibus quidem, vero quaerat quos inventore velit consectetur asperiores, ducimus quae? Fugit quos laborum in et cumque repellendus ea error architecto sequi, eum, possimus atque, laudantium asperiores. Dolore consequuntur repudiandae quam tempora iure consequatur maiores corporis quaerat officiis aspernatur temporibus, possimus pariatur, magnam mollitia numquam. Aspernatur eaque corrupti, magni natus delectus quas!</p>
+            </div>
+          </div>
+          <!-- #customer -->
+
+          <div id="business" class="js-review-gallery review-gallery">
+            <div class="item">
+              <img src="img/business-review-1.png" alt="">
+              <p class="name">Orlin Radev</p>
+              <p class="location">Sofia, Bulgaria</p>
+              <p class="review">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum quis fugit reprehenderit blanditiis temporibus. Neque hic ut pariatur quas expedita voluptate facilis explicabo, fuga dolor veniam vitae sequi dignissimos, facere magnam ipsum, accusamus blanditiis consequuntur, molestiae. Iusto illum quisquam fuga reiciendis quos eius cum vel tempore ipsum, rem laboriosam, beatae.</p>
+            </div>
+            <div class="item">
+              <img src="img/business-review-2.png" alt="">
+              <p class="name">Yuriy Popov</p>
+              <p class="location">Barcelona, Spain</p>
+              <p class="review">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor ullam reiciendis quo aperiam nisi laboriosam esse minus maxime dolorum obcaecati ipsum corporis natus voluptatibus quidem, vero quaerat quos inventore velit consectetur asperiores, ducimus quae? Fugit quos laborum in et cumque repellendus ea error architecto sequi, eum, possimus atque, laudantium asperiores. Dolore consequuntur repudiandae quam tempora iure consequatur maiores corporis quaerat officiis aspernatur temporibus, possimus pariatur, magnam mollitia numquam. Aspernatur eaque corrupti, magni natus delectus quas!</p>
+            </div>
+          </div>
+          <!-- #business -->
+
+        </div>
+        <!-- .tab-content -->
+
+      </div>
+      <!-- .tabs -->
+
+    </div>
+  </section>
+  <!-- .Review -->
+
+  <!-- Contact-us-form -->
+  <section class="contact-us-form">
+    <div class="container">
+      
+      <div class="header">
+        <h2>Мы с вами свяжемся!</h2>
+      </div>
+
+      <div class="form-wrapper">
+        <form class="contact-form" method="POST" novalidate>
+          <label><input type="text" name="name" required placeholder="Имя"></label>
+          <label><input type="text" name="phone"  required placeholder="Телефон"></label>
+          <label><input type="email" name="email"  required placeholder="E-mail"></label>
+          <label><input type="text" name="city" placeholder="Название города"></label>
+          <label><input type="text" name="city-pop" placeholder="Количество жителей"></label>
+
+          <label class="msg-label"><input type="text" name="msg_id" placeholder="Ваш ID в мессенджере"></label>
+
+          <div class="radio-group">
+            <label><input type="radio" name="msg_type" value="Telegram"><i></i>Telegram</label>
+            <label><input type="radio" name="msg_type" value="Whatsapp"><i></i>Whatsapp</label>
+            <label><input type="radio" name="msg_type" value="Viber"><i></i>Viber</label>
+            <label><input type="radio" name="msg_type" value="Facebook"><i></i>Facebook</label>
+            <label><input type="radio" name="msg_type" value="Skype"><i></i>Skype</label>
+            <label><input type="radio" name="msg_type" value="Blackberry Mes."><i></i>Blackberry Mes.</label>
+            <label><input type="radio" name="msg_type" value="QQ mobile"><i></i>QQ mobile</label>
+            <label><input type="radio" name="msg_type" value="WeChat"><i></i>WeChat</label>
+            <label><input type="radio" name="msg_type" value="LINE"><i></i>LINE</label>
+          </div>
+
+          <label><textarea name="business" placeholder="Каким бизнесом занимаетесь?"></textarea></label>
+          
+          <button type="submit" class="btn btn-red">Продолжить</button>
+        </form>
+      </div>
+
+    </div>
+  </section>
+  <!-- .Contact-us-form -->
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      
+      <div class="footer-wrapper">
+        <i class="separator"></i>
+        <a href="tel:+79211123355">+ 7(921) 112 33 55</a>
+        <i class="separator"></i>
+        <a href="mailto:vlad@htmlbook.ru">info@avatarico.com</a>
+        <i class="separator"></i>
+      </div>
+
+    </div>
+  </footer>
+  <!-- .Footer -->
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.matchHeight/0.7.0/jquery.matchHeight-min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.15.0/jquery.validate.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.0/jquery.mask.min.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/form.js"></script>
+  <script src="js/calc.js"></script>
+
+</body>
+</html>

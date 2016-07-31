@@ -1,0 +1,30 @@
+.btn
+  font-size: 30px
+  font-weight: 400
+  text-transform: uppercase
+  padding: 28px 53px
+  border-radius: 60px
+  display: inline-block
+
+  &:hover
+    cursor: pointer
+
+  @media screen and (max-width: 480px)
+    font-size: 20px
+    padding: 17px 33px
+
+  &-red
+    background-color: $red
+    color: #fff
+
+    &:hover
+      opacity: .85
+
+    &:active
+      background-color: #e20342
+      color: rgba(255,255,255, .9)
+      opacity: 1
+
+.btn-wrapper
+  width: 100%
+  text-align: center

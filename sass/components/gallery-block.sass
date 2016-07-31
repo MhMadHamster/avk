@@ -1,0 +1,74 @@
+.gallery
+  width: 100%
+  height: 648px
+  position: relative
+
+  .slick-slider
+    position: absolute
+    width: 100%
+    height: 100%
+
+    .slick-list
+      width: 100%
+      height: 100%
+
+    .slick-slide
+      width: 100%
+      height: 100%
+      overflow: hidden
+
+      img
+        width: 100%
+        height: auto
+
+  .slick-prev,
+  .slick-next
+    position: absolute
+    top: 50%
+    font-size: 0
+    width: 100px
+    height: 100px
+    background-color: $blue
+    border-radius: 50%
+    margin-top: -50px
+    z-index: 1
+
+    &:hover
+      cursor: pointer
+
+    &:after
+      content: ''
+      display: block
+      position: absolute
+      width: 28px
+      height: 48px
+      top: 0
+      bottom: 0
+      left: 50%
+      margin: auto
+      margin-left: -10px
+      background-image: url("/img/gallery-arrow.png")
+
+  .slick-prev
+    left: 55px
+    transform: rotateY(180deg)
+
+  .slick-next
+    right: 55px
+
+  @media screen and (max-width: 1000px)
+    height: 400px
+
+  @media screen and (max-width: 600px)
+    height: 200px
+    
+    .slick-next,
+    .slick-prev
+      transform: scale(.5)
+
+    .slick-prev
+      left: 0
+      transform: rotateY(180deg) scale(.5)
+
+    .slick-next
+      right: 0

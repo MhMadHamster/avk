@@ -1,0 +1,128 @@
+.calc-block
+  background: linear-gradient(to bottom, #ffa901 0%,#ffc00e 50%,#ff9504 100%);
+  padding: 84px 0
+  display: none
+
+  .header
+    text-align: center
+    width: 100%
+    max-width: 750px
+    margin: 0 auto
+
+    h2
+      font-size: 50px
+      color: #fff
+      text-shadow: 0 3px 0px 5px rgba(255,115,0, .25);
+      text-transform: uppercase
+      margin: 0 0 50px
+
+  .calc-wrapper
+    width: 100%
+    max-width: 745px
+    margin: 0 auto
+    text-align: center
+
+    .field
+      width: 100%
+      background-color: #FFF
+      border-radius: 50px
+      font-size: 28px
+      box-sizing: content-box
+      padding: 17px 30px
+      margin-bottom: 16px
+      box-sizing: border-box
+
+      label
+        color: $dark
+        float: left
+
+      span
+        float: right
+        color: $red
+        margin-left: 5px
+        font-weight: 600
+
+      input
+        float: right
+        font-size: 28px
+        width: 160px
+        text-align: right
+        font-weight: 600
+        color: $red
+
+    a.btn
+      margin-top: 40px
+      margin-bottom: 57px
+
+    .profit
+      width: 100%
+      max-width: 720px
+      margin: 0 auto
+      background-color: #FFF
+      background-image: url("/img/dashed-block.png")
+      background-position: 50% 50%
+      background-repeat: no-repeat
+      border-radius: 25px
+      padding: 109px 45px
+      box-sizing: border-box
+
+      span
+        float: left
+        width: 50%
+        font-size: 56px
+        color: $red
+        text-align: left
+
+      input
+        float: left
+        width: 50%
+        font-size: 56px
+        border: none
+        background-color: transparent
+        color: $red
+        text-align: right
+        padding-right: 15px
+        box-sizing: border-box
+
+  @media screen and (max-width: 800px)
+    .header h2
+      font-size: 30px
+
+    .calc-wrapper
+      padding: 0 10px
+      box-sizing: border-box
+
+      .field
+        width: 100%
+        font-size: 20px
+
+        input
+          font-size: 20px
+
+      .profit
+        background-image: none
+        padding: 20px 30px
+        border-radius: 50px
+
+        span,
+        input
+          font-size: 30px
+        
+        input
+          padding-right: 10px
+
+  @media screen and (max-width: 600px)
+    .calc-wrapper
+      .field
+        label
+          display: block
+          float: none
+          text-align: left
+
+      .profit
+        span,
+        input
+          font-size: 20px
+
+        input
+          padding-right: 5px

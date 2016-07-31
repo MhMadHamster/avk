@@ -1,0 +1,33 @@
+footer
+  background-color: #FFF
+  padding: 33px 0
+
+  .footer-wrapper
+    text-align: center
+
+    i,
+    a
+      display: inline-block
+      vertical-align: middle
+
+    i
+      width: 16px
+      height: 16px
+      background-color: $blue
+      margin: 0 32px
+      border-radius: 50%
+
+      &:first-child
+        margin-left: 0
+      &:last-child
+        margin-right: 0
+
+    a
+      font-size: 24px
+      color: $dark
+
+    @media screen and (max-width: 680px)
+      i
+        display: none
+      a
+        display: block
